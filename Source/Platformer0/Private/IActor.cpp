@@ -10,9 +10,15 @@ AIActor::AIActor()
 	PrimaryActorTick.bCanEverTick = false;
 }
 
-void AIActor::UnregisterAllComponents(bool bForReregister)
+void AIActor::SetActorHiddenInGame(bool bNewHidden)
 {
-	OnBeginDestroy.Broadcast();
+	if (bNewHidden) {
+		onHide.Broadcast();
+	}
 
-	Super::UnregisterAllComponents(bForReregister);
+	Super::SetActorHiddenInGame(bNewHidden);
+
+	if (!bNewHidden) {
+		onShow.Broadcast();
+	}
 }
