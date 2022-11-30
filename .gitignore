@@ -13,3 +13,6 @@ Saved
 *.xcodeproj
 *.xcworkspace
 enc_temp_folder
+Build
+Production
+*_BuiltData.*

@@ -7,7 +7,7 @@ TArray<USceneComponent*> UHelperFunctions::Sort(TArray<USceneComponent*> compone
 {
 	TArray<USceneComponent*> componentsToSort;
 	for (USceneComponent* component : components) {
-		if (!component->ComponentTags.IsEmpty()) {
+		if (!component->ComponentTags.IsEmpty() && component->ComponentTags[0].ToString() != getIgnoreTag()) {
 			componentsToSort.Add(component);
 		}
 	}
@@ -32,4 +32,9 @@ TArray<USceneComponent*> UHelperFunctions::Sort(TArray<USceneComponent*> compone
 	}
 
 	return componentsToSort;
+}
+
+FString UHelperFunctions::getIgnoreTag()
+{
+	return "Ignore";
 }
