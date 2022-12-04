@@ -16,3 +16,4 @@ enc_temp_folder
 Build
 Production
 *_BuiltData.*
+*.bak
