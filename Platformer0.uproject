@@ -150,6 +150,14 @@
 		{
 			"Name": "HTTPChunkInstaller",
 			"Enabled": true
+		},
+		{
+			"Name": "ApexDestruction",
+			"Enabled": true
+		},
+		{
+			"Name": "StaticMeshEditorModeling",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
