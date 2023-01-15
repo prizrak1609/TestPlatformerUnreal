@@ -17,3 +17,5 @@ Build
 Production
 *_BuiltData.*
 *.bak
+.cmake
+cmake-build-debug-visual-studio
