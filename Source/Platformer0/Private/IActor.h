@@ -6,8 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "IActor.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnHide);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnShow);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnActorHide);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnActorShow);
 
 UCLASS()
 class AIActor : public AActor
@@ -17,10 +17,10 @@ class AIActor : public AActor
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintAssignable, Category = CustomEvents)
-	FOnHide onHide;
+	FOnActorHide onHide;
 
 	UPROPERTY(EditAnywhere, BlueprintAssignable, Category = CustomEvents)
-	FOnShow onShow;
+	FOnActorShow onShow;
 
 	// Sets default values for this actor's properties
 	AIActor();
