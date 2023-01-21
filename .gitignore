@@ -19,3 +19,4 @@ Production
 *.bak
 .cmake
 cmake-build-debug-visual-studio
+.DS_Store

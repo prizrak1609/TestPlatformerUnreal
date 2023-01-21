@@ -133,17 +133,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "VisualStudioCodeSourceCodeAccess",
-			"Enabled": false
-		},
-		{
-			"Name": "XCodeSourceCodeAccess",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Mac"
-			]
-		},
-		{
 			"Name": "HTTPChunkInstaller",
 			"Enabled": true
 		},
@@ -154,9 +143,14 @@
 		{
 			"Name": "StaticMeshEditorModeling",
 			"Enabled": true
+		},
+		{
+			"Name": "CLionSourceCodeAccess",
+			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
-		"Windows"
+		"Windows",
+		"Mac"
 	]
 }
